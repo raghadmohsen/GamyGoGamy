@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - GamyGo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #800080; 
+        }
+        .arabic {
+            direction: rtl;
+            text-align: right;
+            font-family: 'Tajawal', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Privacy Policy for GamyGo</h1>
+    <p><strong>Last Updated:</strong> <span id="last-updated-en"></span></p>
+
+    <h2>1. Data Collection</h2>
+    <p>GamyGo does not collect, store, or share any user data. All game-related information (such as progress or preferences) is stored locally on your device only.</p>
+
+    <h2>2. Internet & Connectivity</h2>
+    <p>The game works completely offline and does not require any internet connection to function. No data is ever transmitted to servers or third parties.</p>
+
+    <h2>3. Security & Storage</h2>
+    <p>Because GamyGo stores data locally, it remains private and only accessible on your device. If you delete the game, all stored data will be permanently erased and cannot be recovered.</p>
+
+    <h2>4. No Third-Party Involvement</h2>
+    <p>GamyGo does not use third-party tools, analytics, ads, or tracking systems. Your data stays completely yours.</p>
+
+    <h2>5. Legal Compliance</h2>
+    <p>As no personal data is collected or processed, GamyGo complies with all relevant privacy regulations, including GDPR, CCPA, and Saudi Data Protection Law.</p>
+
+    <h2>6. Updates to This Policy</h2>
+    <p>If any future updates change how data is handled, we will notify users inside the app before applying changes.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>For any questions, feel free to reach out:<br>📩 <a href="mailto:Gamygohelp@gmail.com">Gamygohelp@gmail.com</a></p>
+
+    <hr>
+
+    <div class="arabic">
+        <h1>سياسة الخصوصية للعبة GamyGo</h1>
+        <p><strong>آخر تحديث:</strong> <span id="last-updated-ar"></span></p>
+
+        <h2>١. جمع البيانات</h2>
+        <p>لا تقوم لعبة GamyGo بجمع أو تخزين أو مشاركة أي بيانات للمستخدم. جميع المعلومات المتعلقة باللعبة (مثل التقدم أو التفضيلات) يتم حفظها محليًا على جهازك فقط.</p>
+
+        <h2>٢. الاتصال بالإنترنت</h2>
+        <p>تعمل اللعبة بالكامل بدون اتصال بالإنترنت، ولا تتطلب أي اتصال خارجي لتشغيلها. ولا يتم إرسال أي بيانات إلى أي خوادم أو جهات خارجية.</p>
+
+        <h2>٣. الأمان والتخزين</h2>
+        <p>نظرًا لأن بيانات GamyGo محفوظة محليًا، فهي تبقى خاصة بك ولا يمكن الوصول إليها إلا من خلال جهازك. وفي حال حذف اللعبة، يتم حذف جميع البيانات نهائيًا ولا يمكن استرجاعها.</p>
+
+        <h2>٤. عدم مشاركة البيانات مع جهات خارجية</h2>
+        <p>لا تستخدم لعبة GamyGo أي أدوات أو خدمات تحليلات أو إعلانات أو أنظمة تتبع. بياناتك ملك لك بالكامل.</p>
+
+        <h2>٥. الامتثال القانوني</h2>
+        <p>بما أن اللعبة لا تجمع أو تعالج أي بيانات شخصية، فهي متوافقة مع كافة اللوائح القانونية المتعلقة بالخصوصية مثل GDPR وCCPA ونظام حماية البيانات السعودي.</p>
+
+        <h2>٦. التحديثات على هذه السياسة</h2>
+        <p>في حال تم إجراء أي تحديثات مستقبلية على طريقة التعامل مع البيانات، سيتم إعلام المستخدمين داخل التطبيق قبل تنفيذ أي تغييرات.</p>
+
+        <h2>٧. تواصل معنا</h2>
+        <p>لأي استفسارات، يمكنك التواصل معنا عبر:<br>📩 <a href="mailto:Gamygohelp@gmail.com">Gamygohelp@gmail.com</a></p>
+    </div>
+
+    <script>
+        function getFormattedDate() {
+            const options = { day: '2-digit', month: 'short', year: 'numeric' };
+            return new Date().toLocaleDateString('en-GB', options).replace(',', '');
+        }
+
+        function getFormattedDateArabic() {
+            const arabicMonths = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
+            const date = new Date();
+            const day = date.getDate().toLocaleString('ar-EG');
+            const month = arabicMonths[date.getMonth()];
+            const year = date.getFullYear().toLocaleString('ar-EG');
+            return `${day} ${month} ${year}`;
+        }
+
+        document.getElementById("last-updated-en").textContent = getFormattedDate();
+        document.getElementById("last-updated-ar").textContent = getFormattedDateArabic();
+    </script>
+
+</body>
+</html>
